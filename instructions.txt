@@ -1,0 +1,31 @@
+Assignment - 2 CS635
+File structure-
+190050078/
+    -- codes/
+        -- bow.py
+        -- helper.py
+        -- multinom_train.py
+        -- multinom_test.py
+        -- poisson_train.py
+        -- poisson_test.py
+    -- data
+        -- bbow.json 
+        -- cbow.json
+    README
+    report.pdf
+
+Instructions to run -
+Download "20news-bydate" from http://qwone.com/~jason/20Newsgroups/ and keep in root directory
+Run multinom_test.py with file path for getting results with multinomial Naive Bayes
+Run poisson_test.py with file path for getting results with poisson Naive Bayes
+
+Code files - 
+bow.py --> to create bbow.json and cbow.json for a directory of files given as argument
+helper.py --> to create and store vocabulary and P(y)
+multinom_train.py --> to train and save P(v|y) for multinomial Naive Bayes classifier
+poisson_train.py --> to train and save lambda(v|y) for poisson Naive Bayes classifier
+multinom_test.py --> to get prediction from multinomial Naive Bayes classifier, and accuracy over all test files
+poisson_test.py --> to get prediction from poisson Naive Bayes classifier, and accuracy over all test files
+
+References - 
+https://en.wikipedia.org/wiki/Poisson_distribution
